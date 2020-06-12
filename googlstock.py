@@ -39,10 +39,11 @@ X = X[:-forecast_out]
 df.dropna(inplace=True)
 y = np.array(df['label'])#labels
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)#testing and training features and labels
 
+#creating classifier.
 # clf = LinearRegression(n_jobs=-1)
-# clf.fit(X_train, y_train)
+# clf.fit(X_train, y_train)#fit the trained values into the classifier
 # with open('linearregression.pickle', 'wb') as f: #save the classifier(clf)
 #     pickle.dump(clf, f)
 
